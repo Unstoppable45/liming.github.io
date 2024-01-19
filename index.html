@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>非物质文化遗产介绍</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- First Section: Intro Section with dynamic content and header -->
+    <section id="intro" class="intro">
+        <div class="header-banner">
+            <div class="logo-area">
+                <img src="th.jpg" alt="Logo" class="logo">
+                <div class="theme-text">非物质文化遗产介绍</div>
+            </div>
+            <!-- 新增的响应式导航栏 -->
+            <nav class="navbar">
+            <a href="#intro">首页</a>
+            <a href="#heritage-news">非遗资讯</a>
+            <a href="#heritage-persons">非遗传承人</a>
+            <a href="#heritage-market">非遗集市</a>
+            </nav>        
+            <div class="date-info">
+                <span class="gregorian-date">2024年1月15日</span>
+            </div>
+        </div>
+        <div class="dynamic-content">
+            <!-- Placeholder for dynamic image or video -->
+            <img src="图片1.png" alt="动态内容">
+            <!-- 示例：添加视频 -->
+            <!-- <video src="1.mp4" controls></video> -->
+            <div class="web-intro">
+                <h2>关于本站</h2>
+                <p>这里是非物质文化遗产介绍网站，我们致力于保护和传承珍贵的文化遗产。</p>
+                <!-- 可以继续添加更多内容 -->
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Second Section: Navigation Page with links -->
+    <!-- <section id="navigation" class="navigation"></section> -->
+
+    <!-- Third Section: Heritage News -->
+    <section id="heritage-news" class="heritage-news">
+        <div class="news-gallery">
+            <div class="news-item">
+                <img src="图片4.png" alt="新闻图片1">
+                <p>文字介绍1</p>
+            </div>
+            <div class="news-item">
+                <img src="图片6.png" alt="新闻图片2">
+                <p>文字介绍2</p>
+            </div>
+        </div>
+        <aside class="news-list">
+            <h2>每日资讯</h2>
+            <ul>
+                <li>新闻标题 1</li>
+                <li>新闻标题 2</li>
+                <li>新闻标题 3</li>
+                <li>新闻标题 4</li>
+                <li>新闻标题 5</li>
+            </ul>
+        </aside>
+    </section>
+
+    <!-- Fourth Section: Heritage Persons -->
+    <section id="heritage-persons" class="heritage-persons">
+        {persons_content_html}
+    </section>
+
+    <!-- Fifth Section: Heritage Market with footer -->
+    <section id="heritage-market" class="heritage-market">
+        {market_content_html}
+    </section>
+    <footer class="footer-last-section">
+        <p>版权所有 © 2024</p>
+    </footer>
+    <script src="datetime.js"></script>
+    <!-- <script>
+    window.onscroll = function() {
+        var pageOffset = window.pageYOffset;
+        var windowHeight = window.innerHeight;
+        var bodyHeight = document.body.offsetHeight;
+
+        // 检查是否滚动到页面底部
+        if (pageOffset + windowHeight >= bodyHeight) {
+            document.querySelector('.footer-last-section').style.display = 'block';
+        } else {
+            document.querySelector('.footer-last-section').style.display = 'none';
+        }
+    };
+    </script> -->
+</body>
+</html>
